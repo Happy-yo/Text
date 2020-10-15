@@ -19,6 +19,7 @@ import com.lenovo.smarttraffic.bean.Title;
 import com.lenovo.smarttraffic.ui.activity.BaseActivity;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class SetTitleActivity extends AppCompatActivity {
     private RecyclerView recyclerView1;
@@ -64,8 +65,12 @@ public class SetTitleActivity extends AppCompatActivity {
 //适配器1
 class TitleAdapter1 extends RecyclerView.Adapter<TitleAdapter1.ViewHolder>{
     private ArrayList<Title> list = new ArrayList<>();
-    public TitleAdapter1(ArrayList<Title> list){
+    private RecyclerView recyclerView;
+    public TitleAdapter1(ArrayList<Title> list,RecyclerView recyclerView){
+        this.recyclerView = recyclerView;
         this.list = list;
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new OnTouchRey(this,list));
+        itemTouchHelper.attachToRecyclerView(recyclerView);
     }
     @NonNull
     @Override
@@ -78,6 +83,7 @@ class TitleAdapter1 extends RecyclerView.Adapter<TitleAdapter1.ViewHolder>{
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.textView.setText(list.get(position).getTitel());
+
     }
 
     @Override
@@ -159,55 +165,13 @@ class TitleAdapter3 extends RecyclerView.Adapter<TitleAdapter3.ViewHolder>{
         holder.textView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                recyclerView1.setAdapter(new TitleAdapter1(list1));
+                recyclerView1.setAdapter(new TitleAdapter1(list1,recyclerView1));
                 recyclerView2.setAdapter(new TitleAdapter2(list2));
                 return true;
             }
         });
 
-        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new ItemTouchHelper.Callback() {
 
-
-            @Override
-            public int getMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
-                int dragFlag;    //拖动标记
-                int swipeFlags;    //滑动标记
-                //如果是表格布局，则可以上下左右的拖动，但是不能滑动
-                if (recyclerView.getLayoutManager() instanceof GridLayoutManager) {
-                    dragFlag = ItemTouchHelper.UP | ItemTouchHelper.DOWN | ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT;
-                    swipeFlags = 0;
-                }
-                //如果是线性布局，那么只能上下拖动，只能左右滑动
-                else {
-                    dragFlag = ItemTouchHelper.UP |
-                            ItemTouchHelper.DOWN;
-                    swipeFlags = ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT;
-                }
-
-                //通过makeMovementFlags生成最终结果
-                return makeMovementFlags(dragFlag, swipeFlags);
-            }
-
-            @Override
-            public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
-//被拖动的item位置
-                int fromPosition = viewHolder.getLayoutPosition();
-                //他的目标位置
-                int targetPosition = target.getLayoutPosition();
-                //为了降低耦合，使用接口让Adapter去实现交换功能
-
-
-
-
-
-                return true;
-            }
-
-            @Override
-            public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
-
-            }
-        });
     }
 
     @Override
@@ -257,4 +221,51 @@ class TitleAdapter4 extends RecyclerView.Adapter<TitleAdapter4.ViewHolder>{
         }
     }
 
+}
+
+class OnTouchRey extends ItemTouchHelper.Callback{
+    private TitleAdapter1 titleAdapter1;
+    private ArrayList<Title> list;
+
+    public OnTouchRey(TitleAdapter1 titleAdapter1, ArrayList<Title> list) {
+        this.titleAdapter1 = titleAdapter1;
+        this.list = list;
+    }
+
+    @Override
+    public int getMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
+        int dragFlag;    //拖动标记
+        int swipeFlags;    //滑动标记
+        //如果是表格布局，则可以上下左右的拖动，但是不能滑动
+        if (recyclerView.getLayoutManager() instanceof GridLayoutManager) {
+            dragFlag = ItemTouchHelper.UP | ItemTouchHelper.DOWN | ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT;
+            swipeFlags = 0;
+        }
+        //如果是线性布局，那么只能上下拖动，只能左右滑动
+        else {
+            dragFlag = ItemTouchHelper.UP |
+                    ItemTouchHelper.DOWN;
+            swipeFlags = ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT;
+        }
+
+        //通过makeMovementFlags生成最终结果
+        return makeMovementFlags(dragFlag, swipeFlags);
+    }
+
+    @Override
+    public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
+        //被拖动的item位置
+        int fromPosition = viewHolder.getLayoutPosition();
+        //他的目标位置
+        int targetPosition = target.getLayoutPosition();
+        //为了降低耦合，使用接口让Adapter去实现交换功能
+        Collections.swap(list,fromPosition,targetPosition);
+        titleAdapter1.notifyDataSetChanged();
+        return true;
+    }
+
+    @Override
+    public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
+
+    }
 }
