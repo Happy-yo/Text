@@ -66,11 +66,13 @@ public class SetTitleActivity extends AppCompatActivity {
 class TitleAdapter1 extends RecyclerView.Adapter<TitleAdapter1.ViewHolder>{
     private ArrayList<Title> list = new ArrayList<>();
     private RecyclerView recyclerView;
+    private ItemTouchHelper itemTouchHelper;
     public TitleAdapter1(ArrayList<Title> list,RecyclerView recyclerView){
         this.recyclerView = recyclerView;
         this.list = list;
-        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new OnTouchRey(this,list));
+        itemTouchHelper = new ItemTouchHelper(new OnTouchRey(this,list));
         itemTouchHelper.attachToRecyclerView(recyclerView);
+
     }
     @NonNull
     @Override
@@ -83,6 +85,7 @@ class TitleAdapter1 extends RecyclerView.Adapter<TitleAdapter1.ViewHolder>{
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.textView.setText(list.get(position).getTitel());
+
 
     }
 
@@ -254,6 +257,7 @@ class OnTouchRey extends ItemTouchHelper.Callback{
 
     @Override
     public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
+        System.out.println("拖动");
         //被拖动的item位置
         int fromPosition = viewHolder.getLayoutPosition();
         //他的目标位置
@@ -266,6 +270,5 @@ class OnTouchRey extends ItemTouchHelper.Callback{
 
     @Override
     public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
-
     }
 }
