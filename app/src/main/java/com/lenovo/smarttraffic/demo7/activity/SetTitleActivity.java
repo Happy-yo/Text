@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class SetTitleActivity extends AppCompatActivity {
+    private String names = "sdfsdfsdfd";
     private RecyclerView recyclerView1;
     private RecyclerView recyclerView2;
     private ArrayList<Title> list1 = new ArrayList<>();
