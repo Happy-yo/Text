@@ -2,6 +2,8 @@ package com.lenovo.smarttraffic.ui.fragment;
 
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -18,6 +20,7 @@ import android.widget.TextView;
 
 import com.lenovo.smarttraffic.R;
 import com.lenovo.smarttraffic.bean.New;
+import com.lenovo.smarttraffic.demo7.activity.DetailsActivity;
 import com.lenovo.smarttraffic.util.Okhttp_Get;
 
 import org.json.JSONArray;
@@ -42,7 +45,7 @@ public class New4Fragment extends Fragment {
             super.handleMessage(msg);
             if(msg.what == 0){
                 LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-                recyclerView.setAdapter(new New1Adapter(list));
+                recyclerView.setAdapter(new New4Adapter(list,getContext()));
                 recyclerView.setLayoutManager(linearLayoutManager);
             }
             if(msg.what == 1){
@@ -143,11 +146,12 @@ public class New4Fragment extends Fragment {
 //适配器1
 class New4Adapter extends RecyclerView.Adapter<New4Adapter.ViewHolder>{
     private ArrayList<New> list = new ArrayList<>();
+    private Context context;
 
-    public New4Adapter(ArrayList<New> list) {
+    public New4Adapter(ArrayList<New> list,Context context) {
         this.list = list;
+        this.context = context;
     }
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -161,6 +165,19 @@ class New4Adapter extends RecyclerView.Adapter<New4Adapter.ViewHolder>{
         holder.textView_title.setText(list.get(position).getTile());
         holder.textView_time.setText(list.get(position).getTime());
         holder.textView_context.setText(list.get(position).getContext());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, DetailsActivity.class);
+                ArrayList<String> list1 = new ArrayList<>();
+                list1.add(list.get(position).getTile());
+                list1.add("路况新闻");
+                list1.add(list.get(position).getTime());
+                list1.add(list.get(position).getContext());
+                intent.putExtra("this",list1);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

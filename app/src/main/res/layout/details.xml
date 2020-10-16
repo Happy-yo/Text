@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <TextView
+            android:id="@+id/text"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="19dp"
+            android:text="分类:推荐"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="530dp"
+            android:layout_marginLeft="530dp"
+            android:layout_marginTop="18dp"
+            android:text="时间：2019-05-20 18:44:00"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="445dp"
+            android:layout_height="363dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="47dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="64dp"
+            android:text="从官图上看，新车仅仅是针对一部分细节进行改进，视觉效果上，大灯和中网的面积都变得更小。另外，新车继续提供Vignale版车型，部分外观套件会更加奢华。车身尺寸方面，新车长宽高分别为5018mm/1884mm/1506mm。动力方面，新车继续搭载2.0T发动机，发动机最大输出功率为244马力，传动方面或继续匹配6AT变速箱。凯迪拉克XTS降价，亚洲龙国产，你觉得二十多万的C级车市场还会有金牛座的位置吗？"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

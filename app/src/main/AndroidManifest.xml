@@ -46,7 +46,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".MainActivity"
@@ -67,10 +66,10 @@
             android:name="com.amap.api.v2.apikey"
             android:value="bdc9db56ef3f82cb64db5c8212f0dddf" />
 
-        <activity android:name=".demo7.activity.SetTitleActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+        <activity
+            android:name=".demo7.activity.SetTitleActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".demo7.activity.DetailsActivity"></activity>
     </application>
 
 </manifest>
