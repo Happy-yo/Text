@@ -21,25 +21,30 @@ public class SplashActivity extends AppCompatActivity {
         sharedPreferences = getSharedPreferences("title",MODE_PRIVATE);
         editor = getSharedPreferences("title",MODE_PRIVATE).edit();
 
-        editor.putInt("推荐",1);
-        editor.putInt("热点",1);
-        editor.putInt("科技",1);
-        editor.putInt("汽车资讯",1);
-        editor.putInt("健康",0);
-        editor.putInt("财经",0);
-        editor.putInt("体育",0);
-        editor.putInt("实时路况",0);
-        editor.putInt("文化",0);
-        editor.putInt("二手车",0);
-        editor.putInt("违章资讯",0);
-        editor.putInt("娱乐",0);
-        editor.putInt("体育",0);
-        editor.putInt("视频",0);
-        editor.putInt("旅游",0);
-        editor.putInt("军事",0);
-        editor.putInt("游戏",0);
-        editor.putInt("电影",0);
-        editor.apply();
+        if(sharedPreferences.getString("sort","").equals("")){
+            editor.putInt("推荐",1);
+            editor.putInt("热点",1);
+            editor.putInt("科技",1);
+            editor.putInt("汽车资讯",1);
+            editor.putInt("健康",0);
+            editor.putInt("财经",0);
+            editor.putInt("体育",0);
+            editor.putInt("实时路况",0);
+            editor.putInt("文化",0);
+            editor.putInt("二手车",0);
+            editor.putInt("违章资讯",0);
+            editor.putInt("娱乐",0);
+            editor.putInt("体育",0);
+            editor.putInt("视频",0);
+            editor.putInt("旅游",0);
+            editor.putInt("军事",0);
+            editor.putInt("游戏",0);
+            editor.putInt("电影",0);
+            editor.putString("sort","1,2,3,4");
+            editor.apply();
+        }
+
+
 
 
         InitApp.getHandler().postDelayed(() -> {

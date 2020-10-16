@@ -6,11 +6,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <include
-        android:id="@+id/list_tab_toolbar"
-        layout="@layout/toolbar_main"/>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:textColor="#ffffff"
+            android:text="交通资讯"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
 
     <LinearLayout
+        android:background="@color/colorPrimary"
         android:id="@+id/header_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,7 +38,15 @@
             android:layout_weight="1"
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/AppTheme.AppBarOverlay"
-            app:tabTextColor="@color/gray" />
+            app:tabTextColor="@color/gray" >
+
+        </android.support.design.widget.TabLayout>
+        <ImageView
+            android:id="@+id/add"
+            android:layout_gravity="bottom"
+            android:src="@mipmap/function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 

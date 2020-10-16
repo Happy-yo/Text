@@ -23,14 +23,33 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <TextView
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:textColor="#000000"
-        android:textSize="22sp"
-        android:text="我的订阅"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="10dp"
+           android:textColor="#000000"
+           android:textSize="22sp"
+           android:text="我的订阅"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <TextView
+           android:visibility="invisible"
+           android:id="@+id/over"
+           android:layout_marginTop="5dp"
+           android:background="@drawable/text_bk"
+           android:layout_width="94dp"
+           android:layout_height="38dp"
+           android:layout_gravity="right"
+           android:gravity="center"
+           android:text="完成"
+           android:textColor="#f70909"
+           android:textSize="15sp" />
+       
+       
+   </FrameLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/re1"

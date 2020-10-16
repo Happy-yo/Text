@@ -36,11 +36,12 @@ public class BasePagerAdapter extends FragmentStatePagerAdapter {
         super(fm);
         this.fragmentList = fragmentList;
         this.titleList = titleList;
+        this.tabArr = titleList.toArray(new String[titleList.size()]);
     }
 
     @Override
     public Fragment getItem(int position) {
-        return FragmentFactory.getInstance().getFragment(position);
+        return fragmentList.get(position);
     }
 
     @Override
