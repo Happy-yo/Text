@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="23sp"
+            android:textColor="#ffffff"
+            android:text="地铁铁路查询"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text1"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="300dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/subway_bk1"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/subway_bk2"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="32dp" />
+            <TextView
+                android:id="@+id/text3"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/subway_bk3"
+                android:gravity="center"
+                android:text="3"
+                android:textSize="32dp" />
+            <TextView
+                android:id="@+id/text4"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/subway_bk4"
+                android:gravity="center"
+                android:text="4"
+                android:textSize="32dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="149dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="300dp"
+                android:background="@drawable/subway_bk5"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="#ffffff"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/subway_bk6"
+                android:gravity="center"
+                android:text="S1"
+                android:textColor="#ffffff"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/subway_bk7"
+                android:gravity="center"
+                android:text="S3"
+                android:textColor="#ffffff"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/subway_bk8"
+                android:gravity="center"
+                android:text="S8"
+                android:textColor="#ffffff"
+                android:textSize="32dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="227dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="起点："
+                android:layout_marginLeft="300dp"
+                android:textSize="28sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit1"
+                android:background="@drawable/edit_bk"
+                android:layout_width="200dp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="274dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:text="终点："
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/edit2"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_bk" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="414dp"
+            android:layout_marginLeft="414dp"
+            android:layout_marginTop="335dp"
+            android:text="线路查询" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

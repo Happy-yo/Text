@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="23sp"
+            android:textColor="#ffffff"
+            android:text="出行建议"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="145dp"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="26dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="171dp"
+                android:layout_height="346dp">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="最优方案1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@mipmap/start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="1" />
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:textColor="#000000"
+                        android:text="仙灵湖"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="2" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="刘村"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="3" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="天保"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="4" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="贾西"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="5" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="南京北站"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="6" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="铁心桥"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="7" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="油坊桥"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="8" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="永初路"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@mipmap/end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="9" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:textColor="#000000"
+                        android:text="仙灵湖"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="345dp"
+            android:layout_marginLeft="345dp"
+            android:layout_marginTop="26dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="171dp"
+                android:layout_height="346dp">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="最优方案2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@mipmap/start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="1" />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:textColor="#000000"
+                        android:text="仙灵湖"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="2" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="大厂"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="3" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="长路"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="4" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="凤凰山公园"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="5" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="龙池"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="6" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="化公园"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="7" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="八百桥"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@mipmap/end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="9" />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:textColor="#000000"
+                        android:text="仙灵湖"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="545dp"
+            android:layout_marginLeft="545dp"
+            android:layout_marginTop="26dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="171dp"
+                android:layout_height="346dp">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="最优方案3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@mipmap/start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="1" />
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:textColor="#000000"
+                        android:text="仙灵湖"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="2" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="小市"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="3" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="夫子庙"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="4" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="大行宫"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="5" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="鸡鸣寺"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="6" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="南京站"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="7" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="刻字门"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="8" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="九龙湖"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:layout_marginLeft="48dp"
+                        android:background="#057af7"
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@mipmap/end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/subway3"
+                        android:gravity="center"
+                        android:text="9" />
+
+                    <TextView
+                        android:id="@+id/text6"
+                        android:textColor="#000000"
+                        android:text="仙灵湖"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="115dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="167dp"
+            android:layout_marginLeft="167dp"
+            android:layout_marginTop="336dp"
+            android:orientation="vertical">
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:src="@mipmap/home_cc"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:layout_marginLeft="20dp"
+                   android:layout_gravity="center"
+                   android:text="5元"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/home_dc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:text="9站"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="115dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="373dp"
+            android:layout_marginLeft="373dp"
+            android:layout_marginTop="334dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_cc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="7元" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_dc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="8站" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="115dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="580dp"
+            android:layout_marginLeft="580dp"
+            android:layout_marginTop="334dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_cc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="8元" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_dc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="9站" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

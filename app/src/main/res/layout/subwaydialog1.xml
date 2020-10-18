@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text1"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/subway_bk1"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/subway_bk2"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="32dp" />
+        <TextView
+            android:id="@+id/text3"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/subway_bk3"
+            android:gravity="center"
+            android:text="3"
+            android:textSize="32dp" />
+        <TextView
+            android:id="@+id/text4"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/subway_bk4"
+            android:gravity="center"
+            android:text="4"
+            android:textSize="32dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/subway_bk5"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="#ffffff"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/subway_bk6"
+            android:gravity="center"
+            android:text="S1"
+            android:textColor="#ffffff"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/subway_bk7"
+            android:gravity="center"
+            android:text="S3"
+            android:textColor="#ffffff"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/text8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/subway_bk8"
+            android:gravity="center"
+            android:text="S8"
+            android:textColor="#ffffff"
+            android:textSize="32dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
